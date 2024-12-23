@@ -56,7 +56,7 @@ def dat_hang(Gia,Gia1,them, c, a, x, ten, o):
 
     So luong: {a}
 
-    Thanh tien: {tien}''')
+    Thanh tien: {tien}K''')
 def main():
     Gia,Gia1,them, c, a, x, ten, o = body()
     dat_hang(Gia,Gia1,them, c, a, x, ten, o)
