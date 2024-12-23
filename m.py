@@ -53,4 +53,4 @@ Topping: {o}
 
 So luong: {a}
 
-Thanh tien: {tien}''')
+Thanh tien: {tien}K''')
