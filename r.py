@@ -40,10 +40,11 @@ def nt(d):
         'K' : ['Potassium(K)','Kali (bắt nguồn từ tiếng Tân Latinh: kalium, danh pháp IUPAC: potassium) là nguyên tố hoá học ký hiệu K, số thứ tự 19 trong bảng tuần hoàn. Ngoài những tên đã nêu, Kali còn được gọi là bồ tạt (nhiều khi được dùng để chỉ kali carbonat K2CO3) hay potassium. Kali nguyên tố là kim loại kiềm mềm, có màu trắng bạc dễ bị oxy hóa trong không khí và phản ứng rất mạnh với nước tạo ra một lượng nhiệt đủ để đốt cháy lượng hydro sinh ra từ phản ứng đã nêu. Kali khi cháy có ngọn lửa màu hoa cà.'],
         'Ca' : ['Calcium(Ca)','Calci, hay còn được viết là canxi,[5] là một nguyên tố hóa học có ký hiệu Ca và số nguyên tử 20. Là một kim loại kiềm thổ, calci có độ phản ứng cao: nó tạo thành một lớp oxide-nitride màu trắng xám khi tiếp xúc với không khí. Các tính chất vật lý và hóa học của nó gần giống với các chất tương đồng nặng hơn như là stronti và bari. Nó là nguyên tố phổ biến thứ năm trên vỏ Trái Đất, và là kim loại phổ biến thứ ba chỉ sau sắt và nhôm. Hợp chất calci phổ biến nhất trên Trái Đất là calci carbonat, có trong đá vôi và tàn tích hóa thạch của sinh vật biển trong thời kỳ đầu; nguồn calci khác bao gồm thạch cao,'],
        }
-    with st.container(border = True):
-        for t in d:
-            st.header(f[t][0])
-            st.write(f[t][1])
+    if len(d)!= 0:
+        with st.container(border = True):
+            for t in d:
+                st.header(f[t][0])
+                st.write(f[t][1])
 
 def main():
     d = pt(st.text_input('Nhap phuong trinh hoa hoc'))
